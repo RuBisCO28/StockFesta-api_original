@@ -13,8 +13,12 @@ gem 'puma', '~> 5.0'
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
+# Doc: https://github.com/cldwalker/hirb
+gem 'hirb', '~> 0.7.3'
+# Doc: https://github.com/steakknife/hirb-unicode
+gem 'hirb-unicode-steakknife', '~> 0.0.9'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -28,6 +32,9 @@ gem 'rack-cors'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  # Doc: https://github.com/deivid-rodriguez/pry-byebug
+  gem 'pry-byebug', '~> 3.9'
 end
 
 group :development do
